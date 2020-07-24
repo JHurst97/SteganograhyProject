@@ -117,11 +117,41 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="iconfinder_exit-delete-remove-close-x_2931151" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\iconfinder_exit-delete-remove-close-x_2931151.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_beaker_lab_research_chemistry_3005772" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\iconfinder_beaker_lab_research_chemistry_3005772.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>
+
+NOTE: Symetric encryption ONLY works for 1 and 4 LSB.
+Step 1: Open your cover image using the "file" section. 
+Step 2: Add the text you would like to embed using the "text to embed" box. 
+Step 3: Do you want to encrypt the text? if so type in a key and click encrypt. 
+Step 4: You must select the amount of LSB you would like to use for the embedding process. 
+Step 5: Click 'Embed'.
+Step 5: Click save and select location and name of new stego image.
+
+
+NOTE: You will notice, if you saved your stego image in the current session, that the 'stego route' box is already filled with your new images directory location.
+Step 1: Use the open button under the stego route to select the image you would like to extract a message from.
+Step 2: Select the apropriate amount of LSB which you used to embed the message.
+Step 3: Click "Extract".
+Step 4: IF you encrypted the string, make sure the key is entered and correct encryption method is selected, click decrypt.
+
+
+NOTE: This feature uses 1LSB steganography and therefore your input image must be 8x smaller than your cover image.
+Step 1: select your cover image.
+Step 2: Select the image you would like to embed.
+Step 3: Click "Embed".
+Step 4: Save your new stego image using the dialog available.
+
+
+Step 1: Select target file (stego image).
+Step 2: click "Extract".
+Step 3: Save your extracted image.
+
+
+Step 1: Load your first image using the dialog.
+Step 2: Load your second image using the dialog.
+Step 3: Click "compare".
+
+</value>
   </data>
 </root>

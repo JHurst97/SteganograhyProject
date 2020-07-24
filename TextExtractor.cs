@@ -5,12 +5,20 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ProductionProject
 {
-    class StegoRetriever
+    class TextExtractor
     {
         Operations ops = new Operations();
+        private ProgressBar pBar1;
+
+        public TextExtractor(ProgressBar pBar1)
+        {
+            this.pBar1 = pBar1;
+            pBar1.Visible = false;
+        }
 
         public string Retrieve1lsb(string inRoute_)
         {
@@ -29,12 +37,16 @@ namespace ProductionProject
             long msgLength = ops.binaryToDecimalLong(finalLength);
 
             //DECODING 
-            string currentLetter = "";
             string message = "";
             int counter = 0;
+            //progress bar
+            pBarSetup(msgLength * 8);
+
             while (counter < msgLength * 8)
             {
-                Color pixelCol = bmp.GetPixel(pixelIndex.Y, pixelIndex.X);
+                //increase progress bar
+                pBar1.PerformStep();
+                Color pixelCol = bmp.GetPixel(pixelIndex.X, pixelIndex.Y);
                 //loop through R/G/B
                 for (int rgb = 0; rgb < 3; rgb++)
                 {
@@ -81,20 +93,37 @@ namespace ProductionProject
                     }
 
                 }
-                pixelIndex.Y++;
-                if (pixelIndex.Y > bmp.Height)
+                pixelIndex.X++;
+                if (pixelIndex.X >= bmp.Width)
                 {
-                    pixelIndex.Y = 0;
-                    pixelIndex.X++;
+                    pixelIndex.X = 1;
+                    pixelIndex.Y++;
                 }
             }
 
-
+            pBar1.Visible = false;
             //update textbox with decoded
             return ops.BinaryToString(message);
             //update image info panel
             // updateImgInfo();
         }
+
+        private void pBarSetup(long inLength_)
+        {
+            //Convert long to int for maximum
+            int length = Convert.ToInt32(inLength_);
+            // Display the ProgressBar control.
+            pBar1.Visible = true;
+            // Set Minimum to 1 to represent the first file being copied.
+            pBar1.Minimum = 1;
+            // Set Maximum to the total number of files to copy.
+            pBar1.Maximum = length;
+            // Set the initial value of the ProgressBar.
+            pBar1.Value = 1;
+            // Set the Step property to a value of 1 to represent each file being copied.
+            pBar1.Step = 1;
+        }
+
         public string Retrieve2lsb(string inRoute_)
         {
             Point pixelIndex = new Point(1, 0);
@@ -109,15 +138,18 @@ namespace ProductionProject
             long finalLength = Convert.ToInt64(concat);
 
             //length in decimal
-            long msgLength = ops.binaryToDecimalLong(finalLength);
+            long msgLength = ops.binaryToDecimalLong(finalLength) /2;
 
             //DECODING 
             string currentLetter = "";
             string message = "";
             int counter = 0;
+            pBarSetup(msgLength * 8);
             while (counter < msgLength * 8)
             {
-                Color pixelCol = bmp.GetPixel(pixelIndex.Y, pixelIndex.X);
+                //increase progress bar
+                pBar1.PerformStep();
+                Color pixelCol = bmp.GetPixel(pixelIndex.X, pixelIndex.Y);
                 //loop through R/G/B
                 for (int rgb = 0; rgb < 3; rgb++)
                 {
@@ -164,15 +196,15 @@ namespace ProductionProject
                     }
 
                 }
-                pixelIndex.Y++;
-                if (pixelIndex.Y > bmp.Height)
+                pixelIndex.X++;
+                if (pixelIndex.X >= bmp.Width)
                 {
-                    pixelIndex.Y = 0;
-                    pixelIndex.X++;
+                    pixelIndex.X = 1;
+                    pixelIndex.Y++;
                 }
             }
 
-
+            pBar1.Visible = false;
             //update textbox with decoded
             return ops.BinaryToString(message);
             //update image info panel
@@ -192,15 +224,17 @@ namespace ProductionProject
             long finalLength = Convert.ToInt64(concat);
 
             //length in decimal
-            long msgLength = ops.binaryToDecimalLong(finalLength);
+            long msgLength = ops.binaryToDecimalLong(finalLength) /3;
 
             //DECODING 
-            string currentLetter = "";
             string message = "";
             int counter = 0;
+            pBarSetup(msgLength * 8);
             while (counter < msgLength * 8)
             {
-                Color pixelCol = bmp.GetPixel(pixelIndex.Y, pixelIndex.X);
+                //increase progress bar
+                pBar1.PerformStep();
+                Color pixelCol = bmp.GetPixel(pixelIndex.X, pixelIndex.Y);
                 //loop through R/G/B
                 for (int rgb = 0; rgb < 3; rgb++)
                 {
@@ -214,7 +248,7 @@ namespace ProductionProject
                                     //get the binary values of R (notice the "2" param)
                                     string rBitString = ops.convNumberToBits(pixelCol.R);
                                     //get last 4 digits of letter (which is the first 4 digits of our letter)
-                                    string rLastFour = rBitString.Substring(6, 2);
+                                    string rLastFour = rBitString.Substring(5, 3);
 
                                     message += rLastFour;
                                     counter++;
@@ -226,7 +260,7 @@ namespace ProductionProject
                                     //get the binary values of G
                                     string gBitString = ops.convNumberToBits(pixelCol.G);
                                     //get first 4 digit of G
-                                    string gLastFour = gBitString.Substring(6, 2);
+                                    string gLastFour = gBitString.Substring(5, 3);
                                     message += gLastFour;
                                     counter++;
                                     break;
@@ -237,7 +271,7 @@ namespace ProductionProject
                                     //get the binary values of B
                                     string bBitString = ops.convNumberToBits(pixelCol.B);
                                     //get first 4 digit of B
-                                    string bLastFour = bBitString.Substring(6, 2);
+                                    string bLastFour = bBitString.Substring(5, 3);
                                     message += bLastFour;
                                     counter++;
                                     break;
@@ -247,15 +281,18 @@ namespace ProductionProject
                     }
 
                 }
-                pixelIndex.Y++;
-                if (pixelIndex.Y > bmp.Height)
+
+                pixelIndex.X++;
+                if (pixelIndex.X >= bmp.Width - 1)
                 {
-                    pixelIndex.Y = 0;
-                    pixelIndex.X++;
+                    pixelIndex.X = 1;
+                    pixelIndex.Y++;
                 }
+
+
             }
 
-
+            pBar1.Visible = false;
             //update textbox with decoded
             return ops.BinaryToString(message);
             //update image info panel
@@ -280,10 +317,12 @@ namespace ProductionProject
             //DECODING 
             string currentLetter = "";
             string message = "";
-
+            pBarSetup(msgLength * 8);
             for (int i = 0; i < msgLength; i++)
             {
-                Color pixelCol = bmp.GetPixel(pixelIndex.Y, pixelIndex.X);
+                //increase progress bar
+                pBar1.PerformStep();
+                Color pixelCol = bmp.GetPixel(pixelIndex.X, pixelIndex.Y);
                 //loop through R/G/B
                 for (int rgb = 0; rgb < 2; rgb++)
                 {
@@ -315,15 +354,15 @@ namespace ProductionProject
 
                     }
                 }
-                pixelIndex.Y++;
-                if (pixelIndex.Y > bmp.Height)
+                pixelIndex.X++;
+                if (pixelIndex.X >= bmp.Width)
                 {
-                    pixelIndex.Y = 0;
-                    pixelIndex.X++;
+                    pixelIndex.X = 0;
+                    pixelIndex.Y++;
                 }
 
             }
-
+            pBar1.Visible = false;
             //update textbox with decoded
             return ops.BinaryToString(message);
             //update image info panel
