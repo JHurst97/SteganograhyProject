@@ -20,7 +20,7 @@
 
 <li>Click 'Embed'.</li>
 
-<li>Click save and select location and name of new stego image.</li>
+<li>Click save in the 'stego image' section and select location and name of new stego image.</li>
 </ol>
 <h4>Extracting</h4>
 
