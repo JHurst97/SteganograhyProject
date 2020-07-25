@@ -89,7 +89,7 @@
             // textToEmbed
             // 
             this.textToEmbed.BackColor = System.Drawing.Color.White;
-            this.textToEmbed.Font = new System.Drawing.Font("Leelawadee", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textToEmbed.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textToEmbed.Location = new System.Drawing.Point(13, 242);
             this.textToEmbed.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.textToEmbed.MaxLength = 200000;
@@ -118,7 +118,7 @@
             this.embedLabel.Location = new System.Drawing.Point(17, 226);
             this.embedLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.embedLabel.Name = "embedLabel";
-            this.embedLabel.Size = new System.Drawing.Size(79, 14);
+            this.embedLabel.Size = new System.Drawing.Size(78, 13);
             this.embedLabel.TabIndex = 8;
             this.embedLabel.Text = "Text to embed:";
             // 
@@ -144,7 +144,7 @@
             this.Caesar_btn.Location = new System.Drawing.Point(9, 22);
             this.Caesar_btn.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Caesar_btn.Name = "Caesar_btn";
-            this.Caesar_btn.Size = new System.Drawing.Size(59, 18);
+            this.Caesar_btn.Size = new System.Drawing.Size(58, 17);
             this.Caesar_btn.TabIndex = 18;
             this.Caesar_btn.TabStop = true;
             this.Caesar_btn.Text = "Caesar";
@@ -157,7 +157,7 @@
             this.radioButton1.Location = new System.Drawing.Point(9, 44);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(67, 18);
+            this.radioButton1.Size = new System.Drawing.Size(65, 17);
             this.radioButton1.TabIndex = 19;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Symetric";
@@ -169,7 +169,7 @@
             this.textBox1.Location = new System.Drawing.Point(8, 85);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 21);
+            this.textBox1.Size = new System.Drawing.Size(216, 20);
             this.textBox1.TabIndex = 21;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -179,7 +179,7 @@
             this.label1.Location = new System.Drawing.Point(8, 64);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 14);
+            this.label1.Size = new System.Drawing.Size(63, 13);
             this.label1.TabIndex = 23;
             this.label1.Text = "Encrypt key";
             // 
@@ -189,7 +189,7 @@
             this.decodedLabel.Location = new System.Drawing.Point(21, 631);
             this.decodedLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.decodedLabel.Name = "decodedLabel";
-            this.decodedLabel.Size = new System.Drawing.Size(74, 14);
+            this.decodedLabel.Size = new System.Drawing.Size(74, 13);
             this.decodedLabel.TabIndex = 32;
             this.decodedLabel.Text = "Decoded text:";
             // 
@@ -211,7 +211,7 @@
             this.stegoLengthLabel.Location = new System.Drawing.Point(141, 631);
             this.stegoLengthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.stegoLengthLabel.Name = "stegoLengthLabel";
-            this.stegoLengthLabel.Size = new System.Drawing.Size(45, 14);
+            this.stegoLengthLabel.Size = new System.Drawing.Size(46, 13);
             this.stegoLengthLabel.TabIndex = 34;
             this.stegoLengthLabel.Text = "Length: ";
             // 
@@ -221,7 +221,7 @@
             this.lengthLabel.Location = new System.Drawing.Point(189, 226);
             this.lengthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lengthLabel.Name = "lengthLabel";
-            this.lengthLabel.Size = new System.Drawing.Size(45, 14);
+            this.lengthLabel.Size = new System.Drawing.Size(46, 13);
             this.lengthLabel.TabIndex = 35;
             this.lengthLabel.Text = "Length: ";
             // 
@@ -234,6 +234,7 @@
             this.openTextBtn.TabIndex = 36;
             this.openTextBtn.Text = "Open txt...";
             this.openTextBtn.UseVisualStyleBackColor = true;
+            this.openTextBtn.Click += new System.EventHandler(this.openTextBtn_Click);
             // 
             // groupBox1
             // 
@@ -256,6 +257,7 @@
             // 
             // saveStegoBtn
             // 
+            this.saveStegoBtn.Enabled = false;
             this.saveStegoBtn.Location = new System.Drawing.Point(184, 136);
             this.saveStegoBtn.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.saveStegoBtn.Name = "saveStegoBtn";
@@ -282,7 +284,7 @@
             this.inputStegoLabel.Location = new System.Drawing.Point(6, 94);
             this.inputStegoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.inputStegoLabel.Name = "inputStegoLabel";
-            this.inputStegoLabel.Size = new System.Drawing.Size(66, 14);
+            this.inputStegoLabel.Size = new System.Drawing.Size(65, 13);
             this.inputStegoLabel.TabIndex = 37;
             this.inputStegoLabel.Text = "Stego route:";
             // 
@@ -291,11 +293,12 @@
             this.stegobox.Location = new System.Drawing.Point(4, 108);
             this.stegobox.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.stegobox.Name = "stegobox";
-            this.stegobox.Size = new System.Drawing.Size(260, 21);
+            this.stegobox.Size = new System.Drawing.Size(260, 20);
             this.stegobox.TabIndex = 36;
             // 
             // saveButton
             // 
+            this.saveButton.Enabled = false;
             this.saveButton.Location = new System.Drawing.Point(184, 66);
             this.saveButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.saveButton.Name = "saveButton";
@@ -321,7 +324,7 @@
             this.routeBox.Location = new System.Drawing.Point(4, 38);
             this.routeBox.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.routeBox.Name = "routeBox";
-            this.routeBox.Size = new System.Drawing.Size(260, 21);
+            this.routeBox.Size = new System.Drawing.Size(260, 20);
             this.routeBox.TabIndex = 33;
             this.routeBox.Text = "D:\\UNI\\testFiles\\colourScale.jpg";
             // 
@@ -331,7 +334,7 @@
             this.inputFileLabel.Location = new System.Drawing.Point(6, 17);
             this.inputFileLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.inputFileLabel.Name = "inputFileLabel";
-            this.inputFileLabel.Size = new System.Drawing.Size(68, 14);
+            this.inputFileLabel.Size = new System.Drawing.Size(66, 13);
             this.inputFileLabel.TabIndex = 32;
             this.inputFileLabel.Text = "Image route:";
             // 
@@ -358,7 +361,7 @@
             this.infoStorage.Location = new System.Drawing.Point(6, 140);
             this.infoStorage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.infoStorage.Name = "infoStorage";
-            this.infoStorage.Size = new System.Drawing.Size(93, 14);
+            this.infoStorage.Size = new System.Drawing.Size(89, 13);
             this.infoStorage.TabIndex = 6;
             this.infoStorage.Text = "Potential storage:";
             // 
@@ -368,7 +371,7 @@
             this.infoPixelDepth.Location = new System.Drawing.Point(6, 115);
             this.infoPixelDepth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.infoPixelDepth.Name = "infoPixelDepth";
-            this.infoPixelDepth.Size = new System.Drawing.Size(63, 14);
+            this.infoPixelDepth.Size = new System.Drawing.Size(62, 13);
             this.infoPixelDepth.TabIndex = 5;
             this.infoPixelDepth.Text = "Pixel depth:";
             // 
@@ -378,7 +381,7 @@
             this.infoRes.Location = new System.Drawing.Point(6, 94);
             this.infoRes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.infoRes.Name = "infoRes";
-            this.infoRes.Size = new System.Drawing.Size(61, 14);
+            this.infoRes.Size = new System.Drawing.Size(60, 13);
             this.infoRes.TabIndex = 4;
             this.infoRes.Text = "Resolution:";
             // 
@@ -388,7 +391,7 @@
             this.infoHeight.Location = new System.Drawing.Point(6, 69);
             this.infoHeight.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.infoHeight.Name = "infoHeight";
-            this.infoHeight.Size = new System.Drawing.Size(42, 14);
+            this.infoHeight.Size = new System.Drawing.Size(41, 13);
             this.infoHeight.TabIndex = 3;
             this.infoHeight.Text = "Height:";
             // 
@@ -398,7 +401,7 @@
             this.infoWidth.Location = new System.Drawing.Point(6, 45);
             this.infoWidth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.infoWidth.Name = "infoWidth";
-            this.infoWidth.Size = new System.Drawing.Size(38, 14);
+            this.infoWidth.Size = new System.Drawing.Size(38, 13);
             this.infoWidth.TabIndex = 2;
             this.infoWidth.Text = "Width:";
             // 
@@ -408,7 +411,7 @@
             this.infoSize.Location = new System.Drawing.Point(6, 17);
             this.infoSize.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.infoSize.Name = "infoSize";
-            this.infoSize.Size = new System.Drawing.Size(29, 14);
+            this.infoSize.Size = new System.Drawing.Size(30, 13);
             this.infoSize.TabIndex = 1;
             this.infoSize.Text = "Size:";
             // 
@@ -511,7 +514,7 @@
             this.Lsb1Button.Location = new System.Drawing.Point(253, 539);
             this.Lsb1Button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Lsb1Button.Name = "Lsb1Button";
-            this.Lsb1Button.Size = new System.Drawing.Size(51, 18);
+            this.Lsb1Button.Size = new System.Drawing.Size(54, 17);
             this.Lsb1Button.TabIndex = 25;
             this.Lsb1Button.TabStop = true;
             this.Lsb1Button.Text = "1 LSB";
@@ -524,7 +527,7 @@
             this.Lsb2Button.Location = new System.Drawing.Point(253, 561);
             this.Lsb2Button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Lsb2Button.Name = "Lsb2Button";
-            this.Lsb2Button.Size = new System.Drawing.Size(51, 18);
+            this.Lsb2Button.Size = new System.Drawing.Size(54, 17);
             this.Lsb2Button.TabIndex = 26;
             this.Lsb2Button.TabStop = true;
             this.Lsb2Button.Text = "2 LSB";
@@ -536,7 +539,7 @@
             this.Lsb3Button.Location = new System.Drawing.Point(253, 583);
             this.Lsb3Button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Lsb3Button.Name = "Lsb3Button";
-            this.Lsb3Button.Size = new System.Drawing.Size(51, 18);
+            this.Lsb3Button.Size = new System.Drawing.Size(54, 17);
             this.Lsb3Button.TabIndex = 27;
             this.Lsb3Button.TabStop = true;
             this.Lsb3Button.Text = "3 LSB";
@@ -560,7 +563,7 @@
             this.Lsb4Button.Location = new System.Drawing.Point(253, 605);
             this.Lsb4Button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Lsb4Button.Name = "Lsb4Button";
-            this.Lsb4Button.Size = new System.Drawing.Size(51, 18);
+            this.Lsb4Button.Size = new System.Drawing.Size(54, 17);
             this.Lsb4Button.TabIndex = 42;
             this.Lsb4Button.TabStop = true;
             this.Lsb4Button.Text = "4 LSB";
@@ -586,7 +589,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(10, 4);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 14);
+            this.label2.Size = new System.Drawing.Size(115, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Textual steganography";
             // 
@@ -613,7 +616,7 @@
             // 
             // TextEmbedForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1026, 891);
@@ -637,7 +640,7 @@
             this.Controls.Add(this.decodedLabel);
             this.Controls.Add(this.embedLabel);
             this.Controls.Add(this.textToEmbed);
-            this.Font = new System.Drawing.Font("Leelawadee", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);

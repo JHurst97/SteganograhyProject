@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.IO;
 using System.Windows.Forms;
 
 namespace ProductionProject
@@ -80,6 +81,7 @@ namespace ProductionProject
             long timed = sw.ElapsedMilliseconds;
             MessageBox.Show("Elapsed time in milliseconds: " + timed);
             this.sw.Stop();
+            saveStegoBtn.Enabled = true;
         }
 
 
@@ -341,6 +343,35 @@ namespace ProductionProject
             {
                 encryptBtn.Enabled = false;
                 decryptBtn.Enabled = false;
+            }
+        }
+
+        private void openTextBtn_Click(object sender, EventArgs e)
+        {
+            Stream myStream = null;
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+
+            openFileDialog1.InitialDirectory = "c:\\";
+            openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            openFileDialog1.FilterIndex = 2;
+            openFileDialog1.RestoreDirectory = true;
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    if ((myStream = openFileDialog1.OpenFile()) != null)
+                    {
+                        using (myStream)
+                        {
+                            textToEmbed.Text = File.ReadAllText(openFileDialog1.FileName);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
+                }
             }
         }
     }
