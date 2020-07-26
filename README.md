@@ -6,7 +6,7 @@
 <p>I made a YouTube <a href="https://youtu.be/Bgl_wmb9dU0">demonstration</a> for this program but it is slightly outdated now, it's still the same concept though!</p>
 
 <h2>Instructions:</h2>
-<p>Instructions can also be the program on the about form.</p>
+<p>Instructions can also be found in the program on the about form.</p>
 <h4>Embedding</h4>
 <p><i>NOTE: Symetric encryption ONLY works for 1 and 4 LSB.</i></p>
 <ol>
