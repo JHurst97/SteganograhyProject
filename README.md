@@ -6,7 +6,7 @@
 <p>I made a YouTube <a href="https://youtu.be/Bgl_wmb9dU0">demonstration</a> for this program but it is slightly outdated now, it's still the same concept though!</p>
 
 <h2>Instructions:</h2>
-
+<p>Instructions can also be the program on the about form.</p>
 <h4>Embedding</h4>
 <p><i>NOTE: Symetric encryption ONLY works for 1 and 4 LSB.</i></p>
 <ol>
@@ -35,9 +35,9 @@
 <li>IF you encrypted the string, make sure the key is entered and correct encryption method is selected, click decrypt.</li>
 </ol>
 <h4>Image embedding</h4>
-<ol>
-<i> NOTE: This feature uses 1LSB steganography and therefore your input image must be 8x smaller than your cover image.</i>
 
+<i> NOTE: This feature uses 1LSB steganography and therefore your input image must be 8x smaller than your cover image.</i>
+<ol>
 <li>Select your cover image.</li>
 
 <li>Select the image you would like to embed.</li>
