@@ -43,7 +43,6 @@
 <ol>
 <li>Select your cover image.</li>
 <li>Select the image you would like to embed.</li>
-<hr>
 <li>Click &quot;Embed&quot;.</li>
 <li>Save your new stego image using the dialog available.</li>
 </ol>
