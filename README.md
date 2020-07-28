@@ -1,5 +1,4 @@
 <h1><b>Steganography program</b></h1>
-<hr>
 <img src="assets/test.jpg" width="500"></img>
 <h4>Extract the text (1LSB) from this image and decrypt using symetric alongside this key: '23561287'. :)</h4>
 <hr>
