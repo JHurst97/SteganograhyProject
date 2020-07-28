@@ -1,4 +1,7 @@
 <h1><b>Steganography program</b></h1>
+<img src="assets/test.jpg" width="500"></img>
+<h4>Extract the text (1LSB) from this image and decrypt using symetric alongside this key: '23561287'. :)</h4>
+
 <p>This program takes a cover image and allows the user to store text OR an image inside of another image.</p>
 <p>User can choose to modify 1/2/3/4 LSB (least significant bit(s)).<p> 
 <p>1LSB means less potential storage but less noise (1/255) - 4LSB means more 4x more potential storage than 1LSB but 4x the noise (16/255)<p>
