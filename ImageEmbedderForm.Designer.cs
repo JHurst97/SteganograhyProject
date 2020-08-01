@@ -79,7 +79,7 @@
             decodeButton.Name = "decodeButton";
             decodeButton.Size = new System.Drawing.Size(80, 23);
             decodeButton.TabIndex = 69;
-            decodeButton.Text = "Decode";
+            decodeButton.Text = "Extract";
             decodeButton.UseVisualStyleBackColor = true;
             decodeButton.Click += new System.EventHandler(this.decodeButton_Click_1);
             // 
@@ -300,6 +300,7 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5.Location = new System.Drawing.Point(337, 54);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(300, 300);
@@ -326,6 +327,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4.Location = new System.Drawing.Point(17, 54);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(300, 300);
