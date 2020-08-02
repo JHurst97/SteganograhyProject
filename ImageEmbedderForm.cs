@@ -170,5 +170,21 @@ namespace ProductionProject
                 pictureBox5.Image = ix.Retrieve1lsb(textBox2.Text);
             }
         }
+
+        private void saveBtn_Click(object sender, EventArgs e)
+        {
+            Bitmap bmp = new Bitmap(pictureBox5.Image);
+            SaveFileDialog saveFile = new SaveFileDialog();
+            saveFile.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+
+            if (saveFile.ShowDialog() == DialogResult.OK)
+            {
+                string route = saveFile.FileName.ToString();
+                saveLabel.Text = route;
+                pictureBox5.ImageLocation = saveLabel.Text;
+                bmp.Save(route);
+                bmp.Dispose();
+            }
+        }
     }
 }

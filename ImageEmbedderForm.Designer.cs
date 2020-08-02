@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Button decodeButton;
             this.embedPanel = new System.Windows.Forms.Panel();
             this.embedButton = new System.Windows.Forms.Button();
@@ -60,6 +61,8 @@
             this.Lsb3Button = new System.Windows.Forms.RadioButton();
             this.Lsb2Button = new System.Windows.Forms.RadioButton();
             this.Lsb1Button = new System.Windows.Forms.RadioButton();
+            this.saveLabel = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             decodeButton = new System.Windows.Forms.Button();
             this.embedPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -268,6 +271,7 @@
             // 
             // extractPanel
             // 
+            this.extractPanel.Controls.Add(this.saveLabel);
             this.extractPanel.Controls.Add(this.label5);
             this.extractPanel.Controls.Add(this.saveBtn);
             this.extractPanel.Controls.Add(this.pictureBox5);
@@ -297,6 +301,7 @@
             this.saveBtn.TabIndex = 74;
             this.saveBtn.Text = "Save as...";
             this.saveBtn.UseVisualStyleBackColor = true;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
             // pictureBox5
             // 
@@ -437,6 +442,18 @@
             this.Lsb1Button.Text = "1 LSB";
             this.Lsb1Button.UseVisualStyleBackColor = true;
             // 
+            // saveLabel
+            // 
+            this.saveLabel.Location = new System.Drawing.Point(337, 361);
+            this.saveLabel.Name = "saveLabel";
+            this.saveLabel.Size = new System.Drawing.Size(219, 20);
+            this.saveLabel.TabIndex = 76;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // ImageEmbedderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -445,8 +462,8 @@
             this.ClientSize = new System.Drawing.Size(740, 732);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.embedPanel);
             this.Controls.Add(this.extractPanel);
+            this.Controls.Add(this.embedPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ImageEmbedderForm";
             this.Text = "ImageEmbedderForm";
@@ -498,5 +515,7 @@
         private System.Windows.Forms.RadioButton Lsb3Button;
         private System.Windows.Forms.RadioButton Lsb2Button;
         private System.Windows.Forms.RadioButton Lsb1Button;
+        private System.Windows.Forms.TextBox saveLabel;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
