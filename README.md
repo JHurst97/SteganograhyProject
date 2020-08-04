@@ -1,8 +1,10 @@
 <h1><b>Steganography program</b></h1>
+<h4>Steganography is the practice of concealing a file, message, image, or video within another file, message, image, or video. The word steganography comes from Greek steganographia, which combines the words steganós, meaning "covered or concealed", and -graphia meaning "writing".</h4>
+
 <img src="assets/test.jpg" width="500"></img>
 <h4>Extract the text (1LSB) from this image and decrypt using symetric alongside this key: '23561287'. :)</h4>
 <hr>
-<p>This program takes a cover image and allows the user to store text OR an image inside of another image.</p>
+<p>This program takes a cover image and allows the user to store text OR an image inside of another image by manipulating the bits of each pixel.</p>
 <p>User can choose to modify 1/2/3/4 LSB (least significant bit(s)).<p> 
 <p>1LSB means less potential storage but less noise (1/255) - 4LSB means more 4x more potential storage than 1LSB but 4x the noise (16/255)<p>
 <p>Image embed is currently always set to 1LSB, the input image must be 8x smaller than the cover image.</p>
