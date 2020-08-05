@@ -160,6 +160,149 @@ namespace ProductionProject
             return bmpCover;
         }
 
+        public Bitmap Embed2lsb(string coverRoute_, string stegoRoute_)
+        {
+            bmpCover = new Bitmap(coverRoute_);
+            bmpStego = new Bitmap(stegoRoute_);
+            string bitString = "";
+            Point pixelIndex = new Point(1, 0);
+            //width * height * 8 * 3
+            SetLength((bmpStego.Width * bmpStego.Height) * 24);
+            //set width and height in second to last pixel
+            SetWH(bmpStego.Width, bmpStego.Height);
+
+
+            //convert image to bitstring.
+            for (int y = 0; y < bmpStego.Height; y++)
+            {
+                for (int x = 0; x < bmpStego.Width; x++)
+                {
+
+                    Color pixelCol = bmpStego.GetPixel(x, y);
+
+                    for (int rgb = 0; rgb < 3; rgb++)
+                    {
+                        switch (rgb)
+                        {
+                            //R
+                            case 0:
+                                {
+                                    //get the binary value of current letter in message
+                                    string newBit = ops.convNumberToBits(pixelCol.R);
+                                    //append bitstream with new byte
+                                    bitString = bitString + newBit;
+                                    break;
+                                }
+                            //G
+                            case 1:
+                                {
+                                    //get the binary value of current letter in message
+                                    string newBit = ops.convNumberToBits(pixelCol.G);
+                                    //append bitstream with new byte
+                                    bitString = bitString + newBit;
+                                    break;
+                                }
+                            //B
+                            case 2:
+                                {
+                                    //get the binary value of current letter in message
+                                    string newBit = ops.convNumberToBits(pixelCol.B);
+                                    //append bitstream with new byte
+                                    bitString = bitString + newBit;
+                                    break;
+                                }
+                        }
+                    }
+
+
+                }
+            }
+
+            //calculate how many pixels are needed 
+            int noOfPixels = (int)(bitString.Length / 3) / 2;
+
+
+            //for each pixel in image.
+            for (int i = 0; i < noOfPixels; i++)
+            {
+
+                //retrieve pixel at index
+                Color pixelCol = bmpCover.GetPixel(pixelIndex.Y, pixelIndex.X);
+
+                int finalR = 0, finalG = 0, finalB = 0;
+                //loop through R/G/B of pixel
+                for (int rgb = 0; rgb < 3; rgb++)
+                {
+                    if (!String.IsNullOrEmpty(bitString))
+                    {
+                        switch (rgb)
+                        {
+                            //R
+                            case 0:
+                                {
+                                    //get the binary values of R 
+                                    string rBitString = ops.convNumberToBits(pixelCol.R);
+                                    //get first 7 digit of R
+                                    string rFirstFour = rBitString.Substring(0, 6);
+                                    //get first digit from bitStream
+                                    string lFirstFour = bitString.Substring(0, 2);
+                                    //remove first digit bitstring
+                                    bitString = bitString.Substring(1, bitString.Length - 1);
+                                    //merge and convert to back to int
+                                    int newR = Convert.ToInt32(rFirstFour + lFirstFour);
+
+                                    finalR = ops.binaryToDecimal(newR);
+                                    break;
+                                }
+                            //G
+                            case 1:
+                                {
+                                    //get the binary values of G
+                                    string gBitString = ops.convNumberToBits(pixelCol.G);
+                                    //get first 7 digit of G
+                                    string gFirstFour = gBitString.Substring(0, 6);
+                                    //get first digit from bitStream
+                                    string lLastFour = bitString.Substring(0, 2);
+                                    //remove first digit bitstring
+                                    bitString = bitString.Substring(1, bitString.Length - 1);
+                                    //merge 
+                                    int newG = Convert.ToInt32(gFirstFour + lLastFour);
+
+                                    finalG = ops.binaryToDecimal(newG);
+                                    break;
+                                }
+                            //B
+                            case 2:
+                                {
+                                    //get the binary values of B
+                                    string bBitString = ops.convNumberToBits(pixelCol.B);
+                                    //get first 7 digit of B
+                                    string bFirstFour = bBitString.Substring(0, 6);
+                                    //get first digit from bitStream
+                                    string lLastFour = bitString.Substring(0, 2);
+                                    //remove first digit bitstring
+                                    bitString = bitString.Substring(1, bitString.Length - 1);
+                                    //merge 
+                                    int newB = Convert.ToInt32(bFirstFour + lLastFour);
+
+                                    finalB = ops.binaryToDecimal(newB);
+                                    break;
+                                }
+                        }
+                    }
+                }
+                bmpCover.SetPixel(pixelIndex.Y, pixelIndex.X, Color.FromArgb(finalR, finalG, finalB));
+
+                pixelIndex.Y++;
+                if (pixelIndex.Y > bmpCover.Height)
+                {
+                    pixelIndex.Y = 0;
+                    pixelIndex.X++;
+                }
+            }
+            return bmpCover;
+        }
+
         public Bitmap Embed3lsb(string coverRoute_, string stegoRoute_)
         {
             bmpCover = new Bitmap(coverRoute_);

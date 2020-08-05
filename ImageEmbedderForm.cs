@@ -100,6 +100,10 @@ namespace ProductionProject
             {
                 pictureBox3.Image = ie.Embed1lsb(routeBox.Text, textBox1.Text);
             }
+            else if (Lsb2Button.Checked)
+            {
+                pictureBox3.Image = ie.Embed2lsb(routeBox.Text, textBox1.Text);
+            }
             else if (Lsb3Button.Checked)
             {
                 pictureBox3.Image = ie.Embed3lsb(routeBox.Text, textBox1.Text);
