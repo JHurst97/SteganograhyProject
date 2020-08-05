@@ -462,8 +462,8 @@
             this.ClientSize = new System.Drawing.Size(740, 732);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.extractPanel);
             this.Controls.Add(this.embedPanel);
+            this.Controls.Add(this.extractPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ImageEmbedderForm";
             this.Text = "ImageEmbedderForm";

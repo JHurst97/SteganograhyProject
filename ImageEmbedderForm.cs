@@ -95,7 +95,16 @@ namespace ProductionProject
                 MessageBox.Show("ERROR: no input image selected, see 'image to embed' section.");
             }
 
-            pictureBox3.Image = ie.Embed1lsb(routeBox.Text, textBox1.Text);
+            //sw and different LSBs.
+            else if (Lsb1Button.Checked)
+            {
+                pictureBox3.Image = ie.Embed1lsb(routeBox.Text, textBox1.Text);
+            }
+            else if (Lsb4Button.Checked)
+            {
+                pictureBox3.Image = ie.Embed4lsb(routeBox.Text, textBox1.Text);
+            }
+
         }
 
         private void openButton_Click_1(object sender, EventArgs e)
@@ -153,7 +162,7 @@ namespace ProductionProject
             {
                 textBox2.Text = saveFile.FileName.ToString();
                 bmp.Save(textBox2.Text);
-
+                saveFile.Dispose();
             }
         }
 
@@ -184,6 +193,7 @@ namespace ProductionProject
                 pictureBox5.ImageLocation = saveLabel.Text;
                 bmp.Save(route);
                 bmp.Dispose();
+                saveFile.Dispose();
             }
         }
     }
