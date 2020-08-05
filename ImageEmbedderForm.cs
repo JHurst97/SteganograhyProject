@@ -96,9 +96,13 @@ namespace ProductionProject
             }
 
             //sw and different LSBs.
-            else if (Lsb1Button.Checked)
+            if (Lsb1Button.Checked)
             {
                 pictureBox3.Image = ie.Embed1lsb(routeBox.Text, textBox1.Text);
+            }
+            else if (Lsb3Button.Checked)
+            {
+                pictureBox3.Image = ie.Embed3lsb(routeBox.Text, textBox1.Text);
             }
             else if (Lsb4Button.Checked)
             {
