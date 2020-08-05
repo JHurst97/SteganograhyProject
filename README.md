@@ -52,6 +52,7 @@
 
 <hr>
 <h4>Image extracting</h4>
+<i>Note: As mentioned above, only works for 1LSB at the minute.</i>
 <ol>
 <li>Select target file (stego image).</li>
 <li>Click &quot;Extract&quot;.</li>
