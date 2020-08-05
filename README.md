@@ -42,6 +42,7 @@
 <hr>
 <h4>Image embedding</h4>
 <i> NOTE: This feature uses 1LSB steganography and therefore your input image must be 8x smaller than your cover image.</i>
+<i> UPDATE: the embedding feature now works with 1/2/3/4LSB but the extraction is not yet completed, I will remove these notes once completed, it's slightly more tricky then the embed.</i>
 <ol>
 <li>Select your cover image.</li>
 <li>Select the image you would like to embed.</li>
