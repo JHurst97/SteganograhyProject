@@ -1,5 +1,5 @@
 <h1><b>Steganography program</b></h1>
-<h4>Steganography is the practice of concealing a file, message, image, or video within another file, message, image, or video. The word steganography comes from Greek steganographia, which combines the words steganós, meaning "covered or concealed", and -graphia meaning "writing".</h4>
+<p>Steganography is the practice of concealing a file, message, image, or video within another file, message, image, or video. The word steganography comes from Greek steganographia, which combines the words steganós, meaning "covered or concealed", and -graphia meaning "writing".</p>
 
 <img src="assets/test.jpg" width="500"></img>
 <h4>Extract the text (1LSB) from this image and decrypt using symetric alongside this key: '23561287'. :)</h4>
