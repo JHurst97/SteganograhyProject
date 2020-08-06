@@ -14,7 +14,7 @@
 <p>of course, the speeds will vary depending on your machine but here's how it runs on my PC.</h2>
 <p>(embedding 10,000 characters into a 400x400.jpg)</p>
 <table>
-<thead>
+<tbody>
 <tr style="height: 23px;">
 <td style="height: 23px;">&nbsp;</td>
 <td style="height: 23px;">1LSB</td>
@@ -22,8 +22,6 @@
 <td style="height: 23px;">3LSB</td>
 <td style="height: 23px;">4LSB</td>
 </tr>
-</thead>
-<tbody>
 <tr style="height: 23px;">
 <td style="height: 23px;">Test 1</td>
 <td style="height: 23px;">&nbsp;5.064s</td>
@@ -68,7 +66,6 @@
 </tr>
 </tbody>
 </table>
-<!-- DivTable.com -->
 
 <hr>
 <h2>Instructions:</h2>
