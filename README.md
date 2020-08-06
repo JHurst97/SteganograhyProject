@@ -10,6 +10,65 @@
 <p>Image embed is currently always set to 1LSB, the input image must be 8x smaller than the cover image.</p>
 <p>I made a YouTube <a href="https://youtu.be/Bgl_wmb9dU0">demonstration</a> for this program but it is slightly outdated now, it's still the same concept though!</p>
 
+<h2>Speeds<h2>
+  <p>of course, the speeds will vary depending on your machine but here's how it runs on my PC.</h2>
+<table>
+<thead>
+<tr style="height: 23px;">
+<td style="height: 23px;">&nbsp;</td>
+<td style="height: 23px;">1LSB</td>
+<td style="height: 23px;">2LSB</td>
+<td style="height: 23px;">3LSB</td>
+<td style="height: 23px;">4LSB</td>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 23px;">
+<td style="height: 23px;">Test 1</td>
+<td style="height: 23px;">&nbsp;5.064s</td>
+<td style="height: 23px;">&nbsp;2.638s</td>
+<td style="height: 23px;">&nbsp;1.823s</td>
+<td style="height: 23px;">&nbsp;0.082s</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">&nbsp;Test 2</td>
+<td style="height: 23px;">&nbsp;4.968s&nbsp;</td>
+<td style="height: 23px;">&nbsp;2.676s</td>
+<td style="height: 23px;">&nbsp;1.814s&nbsp;</td>
+<td style="height: 23px;">&nbsp;0.079s</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">&nbsp;Test 3&nbsp;</td>
+<td style="height: 23px;">&nbsp;4.947s&nbsp;</td>
+<td style="height: 23px;">&nbsp;2.679s&nbsp;</td>
+<td style="height: 23px;">&nbsp;1.830s</td>
+<td style="height: 23px;">&nbsp;0.078s</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">&nbsp;Test 4</td>
+<td style="height: 23px;">&nbsp;5.098s&nbsp;</td>
+<td style="height: 23px;">&nbsp;2.613s</td>
+<td style="height: 23px;">&nbsp;1.812s</td>
+<td style="height: 23px;">&nbsp;0.080s</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">&nbsp;Test 5</td>
+<td style="height: 23px;">&nbsp;5.151s&nbsp;</td>
+<td style="height: 23px;">&nbsp;2.765s</td>
+<td style="height: 23px;">&nbsp;1.853s&nbsp;</td>
+<td style="height: 23px;">&nbsp;0.079s</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">&nbsp;Avg. timing&nbsp;</td>
+<td style="height: 23px;">&nbsp;5.045s&nbsp;</td>
+<td style="height: 23px;">&nbsp;2.674</td>
+<td style="height: 23px;">&nbsp;1.826</td>
+<td style="height: 23px;">&nbsp;0.076</td>
+</tr>
+</tbody>
+</table>
+<!-- DivTable.com -->
+
 <hr>
 <h2>Instructions:</h2>
 <p>Instructions can also be found in the program on the about form.</p>
