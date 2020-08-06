@@ -10,8 +10,9 @@
 <p>Image embed is currently always set to 1LSB, the input image must be 8x smaller than the cover image.</p>
 <p>I made a YouTube <a href="https://youtu.be/Bgl_wmb9dU0">demonstration</a> for this program but it is slightly outdated now, it's still the same concept though!</p>
 
-<h2>Speeds<h2>
-  <p>of course, the speeds will vary depending on your machine but here's how it runs on my PC.</h2>
+<h2>Speeds</h2>
+<p>of course, the speeds will vary depending on your machine but here's how it runs on my PC.</h2>
+<p>(embedding 10,000 characters into a 400x400.jpg)</p>
 <table>
 <thead>
 <tr style="height: 23px;">
