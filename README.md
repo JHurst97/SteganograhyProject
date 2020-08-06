@@ -13,6 +13,8 @@
 <h2>Tutorial!</h2>
 <h4>How do I embed text?</h4>
 <img src="assets/textEmbedTutorial.jpg" width="500"></img>
+<h4>How do I extract my embedded text?</h4>
+<img src="assets/textExtractTutorial.jpg" width="500"></img>
 
 <h2>Speeds</h2>
 <p>of course, the speeds will vary depending on your machine but here's how it runs on my PC.</h2>
