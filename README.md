@@ -11,11 +11,11 @@
 
 <h2>An activity:</h2>
 <img src="assets/test.jpg" width="500"></img>
-<h4>Extract the text (1LSB) from this image and decrypt using symetric alongside this key: '23561287'. :)</h4>
+<p>Extract the text (1LSB) from this image and decrypt using symetric alongside this key: '23561287'. :)</p>
 
 <h2>Installation guide</h2>
 <h4>Releases:</h4>
-<p>Click 'releases' on this repo and you can download the .exe file, this may not be the latest version of the project.</p>
+<p>Click 'releases' on the right-hand side of this repo and you can download the .exe file, this may not be the latest version of the project.</p>
 <ul><li>Note: my own browser (Microsoft edge) flags this as a potential danger - I assure you it's not but feel free to scan it for yourself. I have reported this issue to Microsoft. :) </li></ul>
 <p>Alternatively...</p>
 <h4>Zip file:</h4>
