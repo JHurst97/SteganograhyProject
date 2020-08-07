@@ -13,6 +13,18 @@
 <li><p>I made a YouTube <a href="https://youtu.be/Bgl_wmb9dU0">demonstration</a> for this program but it is slightly outdated now, it's still the same concept though!</p></li>
 </ul>
 
+<h2>Installation guide</h2>
+<h4>Releases:</h4>
+<p>Click 'releases' on this repo and you can download the .exe file, this may not be the latest version of the project.</p>
+<ul><li>Note: my own browser (Microsoft edge) flags this as a potential danger - I assure you it's not but feel free to scan it for yourself. I have reported this issue to Microsoft. :) </li></ul>
+<p>Alternatively...</p>
+<h4>Zip file:</h4>
+
+<ol>
+  <li>Click 'Code' in the top-right.</li>
+  <li>select 'Download Zip'.</li>
+  <li>This method will require you to compile it using Visual studio.</li>
+</ol>
 <h2>Tutorial!</h2>
 <h4>How do I embed text?</h4>
 <img src="assets/textEmbedTutorial.jpg" width="500"></img>
