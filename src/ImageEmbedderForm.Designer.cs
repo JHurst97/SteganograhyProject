@@ -31,6 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Button decodeButton;
             this.embedPanel = new System.Windows.Forms.Panel();
+            this.Lsb4Button = new System.Windows.Forms.RadioButton();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Lsb3Button = new System.Windows.Forms.RadioButton();
+            this.Lsb2Button = new System.Windows.Forms.RadioButton();
+            this.Lsb1Button = new System.Windows.Forms.RadioButton();
             this.embedButton = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -47,6 +52,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.extractBtn = new System.Windows.Forms.Button();
             this.extractPanel = new System.Windows.Forms.Panel();
+            this.saveLabel = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.saveBtn = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -56,12 +62,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.closeButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.Lsb4Button = new System.Windows.Forms.RadioButton();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.Lsb3Button = new System.Windows.Forms.RadioButton();
-            this.Lsb2Button = new System.Windows.Forms.RadioButton();
-            this.Lsb1Button = new System.Windows.Forms.RadioButton();
-            this.saveLabel = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             decodeButton = new System.Windows.Forms.Button();
             this.embedPanel.SuspendLayout();
@@ -109,6 +109,66 @@
             this.embedPanel.Name = "embedPanel";
             this.embedPanel.Size = new System.Drawing.Size(738, 675);
             this.embedPanel.TabIndex = 1;
+            // 
+            // Lsb4Button
+            // 
+            this.Lsb4Button.AutoSize = true;
+            this.Lsb4Button.Location = new System.Drawing.Point(261, 140);
+            this.Lsb4Button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.Lsb4Button.Name = "Lsb4Button";
+            this.Lsb4Button.Size = new System.Drawing.Size(54, 17);
+            this.Lsb4Button.TabIndex = 72;
+            this.Lsb4Button.TabStop = true;
+            this.Lsb4Button.Text = "4 LSB";
+            this.Lsb4Button.UseVisualStyleBackColor = true;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.White;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Location = new System.Drawing.Point(261, 32);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(208, 31);
+            this.textBox3.TabIndex = 71;
+            this.textBox3.Text = "(Less bits = less space/higher quality.\r\nMore bits = more space/lower quality.)";
+            // 
+            // Lsb3Button
+            // 
+            this.Lsb3Button.AutoSize = true;
+            this.Lsb3Button.Location = new System.Drawing.Point(261, 118);
+            this.Lsb3Button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.Lsb3Button.Name = "Lsb3Button";
+            this.Lsb3Button.Size = new System.Drawing.Size(54, 17);
+            this.Lsb3Button.TabIndex = 70;
+            this.Lsb3Button.TabStop = true;
+            this.Lsb3Button.Text = "3 LSB";
+            this.Lsb3Button.UseVisualStyleBackColor = true;
+            // 
+            // Lsb2Button
+            // 
+            this.Lsb2Button.AutoSize = true;
+            this.Lsb2Button.Location = new System.Drawing.Point(261, 96);
+            this.Lsb2Button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.Lsb2Button.Name = "Lsb2Button";
+            this.Lsb2Button.Size = new System.Drawing.Size(54, 17);
+            this.Lsb2Button.TabIndex = 69;
+            this.Lsb2Button.TabStop = true;
+            this.Lsb2Button.Text = "2 LSB";
+            this.Lsb2Button.UseVisualStyleBackColor = true;
+            // 
+            // Lsb1Button
+            // 
+            this.Lsb1Button.AutoSize = true;
+            this.Lsb1Button.Location = new System.Drawing.Point(261, 74);
+            this.Lsb1Button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.Lsb1Button.Name = "Lsb1Button";
+            this.Lsb1Button.Size = new System.Drawing.Size(54, 17);
+            this.Lsb1Button.TabIndex = 68;
+            this.Lsb1Button.TabStop = true;
+            this.Lsb1Button.Text = "1 LSB";
+            this.Lsb1Button.UseVisualStyleBackColor = true;
             // 
             // embedButton
             // 
@@ -177,8 +237,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(250, 20);
             this.textBox1.TabIndex = 61;
-            this.textBox1.Text = "C:\\Users\\Joel\\source\\repos\\SteganographyApp\\Test files and assisting docs\\Carl_Sa" +
-    "gan-50x50.jpg";
             // 
             // label1
             // 
@@ -217,8 +275,6 @@
             this.routeBox.Name = "routeBox";
             this.routeBox.Size = new System.Drawing.Size(250, 20);
             this.routeBox.TabIndex = 57;
-            this.routeBox.Text = "C:\\Users\\Joel\\source\\repos\\SteganographyApp\\Test files and assisting docs\\colourS" +
-    "cale2.jpg";
             // 
             // inputFile1Label
             // 
@@ -284,6 +340,13 @@
             this.extractPanel.Size = new System.Drawing.Size(649, 398);
             this.extractPanel.TabIndex = 2;
             // 
+            // saveLabel
+            // 
+            this.saveLabel.Location = new System.Drawing.Point(337, 361);
+            this.saveLabel.Name = "saveLabel";
+            this.saveLabel.Size = new System.Drawing.Size(219, 20);
+            this.saveLabel.TabIndex = 76;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -327,8 +390,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(300, 20);
             this.textBox2.TabIndex = 71;
-            this.textBox2.Text = "C:\\Users\\Joel\\source\\repos\\SteganographyApp\\Test files and assisting docs\\test.jp" +
-    "g";
             // 
             // pictureBox4
             // 
@@ -381,73 +442,6 @@
             this.label2.Size = new System.Drawing.Size(109, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Image steganography";
-            // 
-            // Lsb4Button
-            // 
-            this.Lsb4Button.AutoSize = true;
-            this.Lsb4Button.Location = new System.Drawing.Point(261, 140);
-            this.Lsb4Button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.Lsb4Button.Name = "Lsb4Button";
-            this.Lsb4Button.Size = new System.Drawing.Size(54, 17);
-            this.Lsb4Button.TabIndex = 72;
-            this.Lsb4Button.TabStop = true;
-            this.Lsb4Button.Text = "4 LSB";
-            this.Lsb4Button.UseVisualStyleBackColor = true;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(261, 32);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(208, 31);
-            this.textBox3.TabIndex = 71;
-            this.textBox3.Text = "(Less bits = less space/higher quality.\r\nMore bits = more space/lower quality.)";
-            // 
-            // Lsb3Button
-            // 
-            this.Lsb3Button.AutoSize = true;
-            this.Lsb3Button.Location = new System.Drawing.Point(261, 118);
-            this.Lsb3Button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.Lsb3Button.Name = "Lsb3Button";
-            this.Lsb3Button.Size = new System.Drawing.Size(54, 17);
-            this.Lsb3Button.TabIndex = 70;
-            this.Lsb3Button.TabStop = true;
-            this.Lsb3Button.Text = "3 LSB";
-            this.Lsb3Button.UseVisualStyleBackColor = true;
-            // 
-            // Lsb2Button
-            // 
-            this.Lsb2Button.AutoSize = true;
-            this.Lsb2Button.Location = new System.Drawing.Point(261, 96);
-            this.Lsb2Button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.Lsb2Button.Name = "Lsb2Button";
-            this.Lsb2Button.Size = new System.Drawing.Size(54, 17);
-            this.Lsb2Button.TabIndex = 69;
-            this.Lsb2Button.TabStop = true;
-            this.Lsb2Button.Text = "2 LSB";
-            this.Lsb2Button.UseVisualStyleBackColor = true;
-            // 
-            // Lsb1Button
-            // 
-            this.Lsb1Button.AutoSize = true;
-            this.Lsb1Button.Location = new System.Drawing.Point(261, 74);
-            this.Lsb1Button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.Lsb1Button.Name = "Lsb1Button";
-            this.Lsb1Button.Size = new System.Drawing.Size(54, 17);
-            this.Lsb1Button.TabIndex = 68;
-            this.Lsb1Button.TabStop = true;
-            this.Lsb1Button.Text = "1 LSB";
-            this.Lsb1Button.UseVisualStyleBackColor = true;
-            // 
-            // saveLabel
-            // 
-            this.saveLabel.Location = new System.Drawing.Point(337, 361);
-            this.saveLabel.Name = "saveLabel";
-            this.saveLabel.Size = new System.Drawing.Size(219, 20);
-            this.saveLabel.TabIndex = 76;
             // 
             // contextMenuStrip1
             // 
