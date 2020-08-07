@@ -48,7 +48,6 @@
             this.openStegoBtn = new System.Windows.Forms.Button();
             this.inputStegoLabel = new System.Windows.Forms.Label();
             this.stegobox = new System.Windows.Forms.TextBox();
-            this.saveButton = new System.Windows.Forms.Button();
             this.openButton = new System.Windows.Forms.Button();
             this.routeBox = new System.Windows.Forms.TextBox();
             this.inputFileLabel = new System.Windows.Forms.Label();
@@ -242,7 +241,6 @@
             this.groupBox1.Controls.Add(this.openStegoBtn);
             this.groupBox1.Controls.Add(this.inputStegoLabel);
             this.groupBox1.Controls.Add(this.stegobox);
-            this.groupBox1.Controls.Add(this.saveButton);
             this.groupBox1.Controls.Add(this.openButton);
             this.groupBox1.Controls.Add(this.routeBox);
             this.groupBox1.Controls.Add(this.inputFileLabel);
@@ -296,18 +294,6 @@
             this.stegobox.Size = new System.Drawing.Size(260, 20);
             this.stegobox.TabIndex = 36;
             // 
-            // saveButton
-            // 
-            this.saveButton.Enabled = false;
-            this.saveButton.Location = new System.Drawing.Point(184, 66);
-            this.saveButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(80, 26);
-            this.saveButton.TabIndex = 35;
-            this.saveButton.Text = "Save...";
-            this.saveButton.UseVisualStyleBackColor = true;
-            this.saveButton.Click += new System.EventHandler(this.saveButton_Click_1);
-            // 
             // openButton
             // 
             this.openButton.Location = new System.Drawing.Point(92, 66);
@@ -326,7 +312,6 @@
             this.routeBox.Name = "routeBox";
             this.routeBox.Size = new System.Drawing.Size(260, 20);
             this.routeBox.TabIndex = 33;
-            this.routeBox.Text = "D:\\UNI\\testFiles\\colourScale.jpg";
             // 
             // inputFileLabel
             // 
@@ -686,7 +671,6 @@
         private System.Windows.Forms.Button openStegoBtn;
         private System.Windows.Forms.Label inputStegoLabel;
         private System.Windows.Forms.TextBox stegobox;
-        private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Button openButton;
         private System.Windows.Forms.TextBox routeBox;
         private System.Windows.Forms.Label inputFileLabel;
