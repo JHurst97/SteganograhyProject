@@ -13,7 +13,7 @@
 <img src="assets/test.jpg" width="500"></img>
 <p>Extract the text (1LSB) from this image and decrypt using symetric alongside this key: '23561287'. :)</p>
 
-<h2>Installation guide</h2>
+<h2>Installation guide:</h2>
 <h4>Releases:</h4>
 <p>Click 'releases' on the right-hand side of this repo and you can download the .exe file, this may not be the latest version of the project.</p>
 <ul><li>Note: my own browser (Microsoft edge) flags this as a potential danger - I assure you it's not but feel free to scan it for yourself. I have reported this issue to Microsoft. :) </li></ul>
@@ -25,13 +25,13 @@
   <li>select 'Download Zip'.</li>
   <li>This method will require you to compile it using Visual studio.</li>
 </ol>
-<h2>Tutorial!</h2>
+<h2>Tutorial:</h2>
 <h4>How do I embed text?</h4>
 <img src="assets/textEmbedTutorial.jpg" width="500"></img>
 <h4>How do I extract my embedded text?</h4>
 <img src="assets/textExtractTutorial.jpg" width="500"></img>
 
-<h2>Speeds</h2>
+<h2>Speed test:</h2>
 <p>of course, the speeds will vary depending on your machine but here's how it runs on my PC.</h2>
 <p>(embedding 10,000 characters into a 400x400.jpg)</p>
 <table>
