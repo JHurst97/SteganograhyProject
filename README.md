@@ -4,11 +4,14 @@
 <img src="assets/test.jpg" width="500"></img>
 <h4>Extract the text (1LSB) from this image and decrypt using symetric alongside this key: '23561287'. :)</h4>
 <hr>
-<p>This program takes a cover image and allows the user to store text OR an image inside of another image by manipulating the bits of each pixel.</p>
-<p>User can choose to modify 1/2/3/4 LSB (least significant bit(s)).<p> 
-<p>1LSB means less potential storage but less noise (1/255) - 4LSB means more 4x more potential storage than 1LSB but 4x the noise (16/255)<p>
-<p>Image embed is currently always set to 1LSB, the input image must be 8x smaller than the cover image.</p>
-<p>I made a YouTube <a href="https://youtu.be/Bgl_wmb9dU0">demonstration</a> for this program but it is slightly outdated now, it's still the same concept though!</p>
+
+<ul>
+<li><p>This program takes a cover image and allows the user to store text OR an image inside of another image by manipulating the bits of each pixel.</p></li>
+<li><p>User can choose to modify 1/2/3/4 LSB (least significant bit(s)).<p> </li>
+<li><p>1LSB means less potential storage but less noise (1/255) - 4LSB means more 4x more potential storage than 1LSB but 4x the noise (16/255)<p></li>
+<li><p>Image embed is currently always set to 1LSB, the input image must be 8x smaller than the cover image.</p></li>
+<li><p>I made a YouTube <a href="https://youtu.be/Bgl_wmb9dU0">demonstration</a> for this program but it is slightly outdated now, it's still the same concept though!</p></li>
+</ul>
 
 <h2>Tutorial!</h2>
 <h4>How do I embed text?</h4>
