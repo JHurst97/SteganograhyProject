@@ -75,6 +75,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.closeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -457,6 +458,7 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.label3);
             this.groupBox5.Controls.Add(this.decryptBtn);
             this.groupBox5.Controls.Add(this.encryptBtn);
             this.groupBox5.Controls.Add(this.Caesar_btn);
@@ -540,7 +542,8 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(208, 38);
             this.textBox3.TabIndex = 41;
-            this.textBox3.Text = "(Less bits = less space/higher quality.\r\nMore bits = more space/lower quality.)";
+            this.textBox3.Text = "(Less bits = less space/higher quality.\r\nMore bits = more space/lower quality.)\r\n" +
+    "Choose how many LSB to use:";
             // 
             // Lsb4Button
             // 
@@ -598,6 +601,16 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(186, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "*Beta";
             // 
             // TextEmbedForm
             // 
@@ -696,6 +709,7 @@
         private System.Windows.Forms.Button decryptBtn;
         private System.Windows.Forms.Button encryptBtn;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label3;
     }
 }
 
