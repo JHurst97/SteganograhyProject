@@ -64,6 +64,7 @@
             this.pBar1 = new System.Windows.Forms.ProgressBar();
             this.pictureBoxStego = new System.Windows.Forms.PictureBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.decryptBtn = new System.Windows.Forms.Button();
             this.encryptBtn = new System.Windows.Forms.Button();
             this.Lsb1Button = new System.Windows.Forms.RadioButton();
@@ -75,7 +76,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.closeButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -444,6 +444,7 @@
             this.pBar1.Name = "pBar1";
             this.pBar1.Size = new System.Drawing.Size(464, 11);
             this.pBar1.TabIndex = 43;
+            this.pBar1.Click += new System.EventHandler(this.pBar1_Click);
             // 
             // pictureBoxStego
             // 
@@ -473,6 +474,17 @@
             this.groupBox5.TabIndex = 40;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Encryption:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(186, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "*Beta";
             // 
             // decryptBtn
             // 
@@ -601,16 +613,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(186, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "*Beta";
             // 
             // TextEmbedForm
             // 

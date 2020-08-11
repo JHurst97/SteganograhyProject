@@ -374,5 +374,10 @@ namespace ProductionProject
                 }
             }
         }
+
+        private void pBar1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

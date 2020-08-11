@@ -484,7 +484,7 @@ namespace ProductionProject
             // Set Minimum to 1 to represent the first file being copied.
             pBar1.Minimum = 1;
             // Set Maximum to the total number of files to copy.
-            pBar1.Maximum = max_ / 10;
+            pBar1.Maximum = max_ / 8;
             // Set the initial value of the ProgressBar.
             pBar1.Value = 1;
             // Set the Step property to a value of 1 to represent each file being copied.
