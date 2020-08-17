@@ -1,6 +1,6 @@
 <h1><b>Steganography program</b></h1>
 
-<h3>Table of contents:</h3>
+<h3>Contents:</h3>
 
 - [Introduction.](#intro)
 - [Activity.](#activity)
