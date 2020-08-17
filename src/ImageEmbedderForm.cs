@@ -183,8 +183,31 @@ namespace ProductionProject
             }
             else
             {
-                pictureBox4.Image = new Bitmap(textBox2.Text);
-                pictureBox5.Image = ix.Retrieve1lsb(textBox2.Text);
+                if (Lsb1Button.Checked)
+                {
+                    pictureBox4.Image = new Bitmap(textBox2.Text);
+                    pictureBox5.Image = ix.Retrieve1lsb(textBox2.Text);
+                }
+                else if (Lsb2Button.Checked)
+                {
+                    pictureBox4.Image = new Bitmap(textBox2.Text);
+                    pictureBox5.Image = ix.Retrieve2lsb(textBox2.Text);
+
+                }
+                else if (Lsb3Button.Checked)
+                {
+                    pictureBox4.Image = new Bitmap(textBox2.Text);
+                    pictureBox5.Image = ix.Retrieve3lsb(textBox2.Text);
+
+                }
+                else if (Lsb4Button.Checked)
+                {
+                    pictureBox4.Image = new Bitmap(textBox2.Text);
+                    pictureBox5.Image = ix.Retrieve4lsb(textBox2.Text);
+
+                }
+
+                
             }
         }
 
