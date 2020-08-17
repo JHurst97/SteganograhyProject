@@ -1,6 +1,16 @@
 <h1><b>Steganography program</b></h1>
 
-- [Heading](#intro)
+- [Introduction.](#intro)
+- [An activity.](#an activity:)
+- [Installation guide.](#installation guide:)
+- [An activity.](#an activity:)
+- [An activity.](#an activity:)
+- [An activity.](#an activity:)
+- [An activity.](#an activity:)
+- [An activity.](#an activity:)
+- [An activity.](#an activity:)
+- [An activity.](#an activity:)
+- [An activity.](#an activity:)
 <!-- toc -->
 
 ## Intro
@@ -14,11 +24,11 @@
 <li><p>I made a YouTube <a href="https://youtu.be/Bgl_wmb9dU0">demonstration</a> for this program but it is slightly outdated now, it's still the same concept though!</p></li>
 </ul>
 
-<h2>An activity:</h2>
+## An activity:
 <img src="assets/test.jpg" width="500"></img>
 <p>Extract the text (1LSB) from this image and decrypt using symetric alongside this key: '23561287'. :)</p>
 
-<h2>Installation guide:</h2>
+## Installation guide:
 <h4>Releases:</h4>
 <p>Click 'releases' on the right-hand side of this repo and you can download the .exe file, this may not be the latest version of the project.</p>
 <ul><li>Note: my own browser (Microsoft edge) flags this as a potential danger - I assure you it's not but feel free to scan it for yourself. I have reported this issue to Microsoft. :) </li></ul>
