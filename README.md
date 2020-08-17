@@ -16,7 +16,6 @@
 <li><p>Image embed is currently set to 1/2/3 LSB - the extraction can only be performed on 1lsb. I'm working on this but it results in the following requirement: the input image must be 8x smaller than the cover image.</p></li>
 <li><p>I made a YouTube <a href="https://youtu.be/Bgl_wmb9dU0">demonstration</a> for this program but it is slightly outdated now, it's still the same concept though!</p></li>
 </ul>
-## Intro1
 ## Activity:
 <img src="assets/test.jpg" width="500"></img>
 <p>Extract the text (1LSB) from this image and decrypt using symetric alongside this key: '23561287'. :)</p>
@@ -28,6 +27,7 @@
 <p>Alternatively...</p>
 <h4>Zip file:</h4>
 
+## Intro1
 <ol>
   <li>Click 'Code' in the top-right.</li>
   <li>select 'Download Zip'.</li>
