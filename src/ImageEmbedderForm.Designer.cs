@@ -67,6 +67,7 @@
             this.extract3LSBButton = new System.Windows.Forms.RadioButton();
             this.extract2LSBButton = new System.Windows.Forms.RadioButton();
             this.extract1LSBButton = new System.Windows.Forms.RadioButton();
+            this.warningLabel = new System.Windows.Forms.Label();
             decodeButton = new System.Windows.Forms.Button();
             this.embedPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -92,6 +93,7 @@
             // 
             // embedPanel
             // 
+            this.embedPanel.Controls.Add(this.warningLabel);
             this.embedPanel.Controls.Add(this.Lsb4Button);
             this.embedPanel.Controls.Add(this.textBox3);
             this.embedPanel.Controls.Add(this.Lsb3Button);
@@ -504,6 +506,18 @@
             this.extract1LSBButton.Text = "1 LSB";
             this.extract1LSBButton.UseVisualStyleBackColor = true;
             // 
+            // warningLabel
+            // 
+            this.warningLabel.AutoSize = true;
+            this.warningLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.warningLabel.ForeColor = System.Drawing.Color.Red;
+            this.warningLabel.Location = new System.Drawing.Point(75, 0);
+            this.warningLabel.Name = "warningLabel";
+            this.warningLabel.Size = new System.Drawing.Size(633, 17);
+            this.warningLabel.TabIndex = 73;
+            this.warningLabel.Text = "WARNING: 1LSB is currently the only working option for image embedding. 2/3/4LSB " +
+    "coming soon. ";
+            // 
             // ImageEmbedderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -512,8 +526,8 @@
             this.ClientSize = new System.Drawing.Size(740, 732);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.extractPanel);
             this.Controls.Add(this.embedPanel);
+            this.Controls.Add(this.extractPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ImageEmbedderForm";
             this.Text = "ImageEmbedderForm";
@@ -571,5 +585,6 @@
         private System.Windows.Forms.RadioButton extract3LSBButton;
         private System.Windows.Forms.RadioButton extract2LSBButton;
         private System.Windows.Forms.RadioButton extract1LSBButton;
+        private System.Windows.Forms.Label warningLabel;
     }
 }

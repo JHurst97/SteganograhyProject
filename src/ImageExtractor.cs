@@ -350,7 +350,7 @@ namespace ProductionProject
                                     //get the binary values of R (notice the "2" param)
                                     string rBitString = ops.convNumberToBits(pixelCol.R);
                                     //get last 4 digits of letter (which is the first 4 digits of our letter)
-                                    string rLastFour = rBitString.Substring(7, 1);
+                                    string rLastFour = rBitString.Substring(5, 3);
 
                                     message += rLastFour;
                                     counter++;
@@ -362,7 +362,7 @@ namespace ProductionProject
                                     //get the binary values of G
                                     string gBitString = ops.convNumberToBits(pixelCol.G);
                                     //get first 4 digit of G
-                                    string gLastFour = gBitString.Substring(7, 1);
+                                    string gLastFour = gBitString.Substring(5, 3);
                                     message += gLastFour;
                                     counter++;
                                     break;
@@ -373,7 +373,7 @@ namespace ProductionProject
                                     //get the binary values of B
                                     string bBitString = ops.convNumberToBits(pixelCol.B);
                                     //get first 4 digit of B
-                                    string bLastFour = bBitString.Substring(7, 1);
+                                    string bLastFour = bBitString.Substring(5, 3);
                                     message += bLastFour;
                                     counter++;
                                     break;
