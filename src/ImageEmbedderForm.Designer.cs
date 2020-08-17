@@ -63,6 +63,10 @@
             this.closeButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.extract4LSBButton = new System.Windows.Forms.RadioButton();
+            this.extract3LSBButton = new System.Windows.Forms.RadioButton();
+            this.extract2LSBButton = new System.Windows.Forms.RadioButton();
+            this.extract1LSBButton = new System.Windows.Forms.RadioButton();
             decodeButton = new System.Windows.Forms.Button();
             this.embedPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -77,7 +81,7 @@
             // 
             // decodeButton
             // 
-            decodeButton.Location = new System.Drawing.Point(238, 359);
+            decodeButton.Location = new System.Drawing.Point(237, 386);
             decodeButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             decodeButton.Name = "decodeButton";
             decodeButton.Size = new System.Drawing.Size(80, 23);
@@ -327,6 +331,10 @@
             // 
             // extractPanel
             // 
+            this.extractPanel.Controls.Add(this.extract4LSBButton);
+            this.extractPanel.Controls.Add(this.extract3LSBButton);
+            this.extractPanel.Controls.Add(this.extract2LSBButton);
+            this.extractPanel.Controls.Add(this.extract1LSBButton);
             this.extractPanel.Controls.Add(this.saveLabel);
             this.extractPanel.Controls.Add(this.label5);
             this.extractPanel.Controls.Add(this.saveBtn);
@@ -337,14 +345,14 @@
             this.extractPanel.Controls.Add(decodeButton);
             this.extractPanel.Location = new System.Drawing.Point(1, 52);
             this.extractPanel.Name = "extractPanel";
-            this.extractPanel.Size = new System.Drawing.Size(649, 398);
+            this.extractPanel.Size = new System.Drawing.Size(649, 418);
             this.extractPanel.TabIndex = 2;
             // 
             // saveLabel
             // 
-            this.saveLabel.Location = new System.Drawing.Point(337, 361);
+            this.saveLabel.Location = new System.Drawing.Point(337, 360);
             this.saveLabel.Name = "saveLabel";
-            this.saveLabel.Size = new System.Drawing.Size(219, 20);
+            this.saveLabel.Size = new System.Drawing.Size(300, 20);
             this.saveLabel.TabIndex = 76;
             // 
             // label5
@@ -358,7 +366,7 @@
             // 
             // saveBtn
             // 
-            this.saveBtn.Location = new System.Drawing.Point(562, 359);
+            this.saveBtn.Location = new System.Drawing.Point(562, 386);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(75, 23);
             this.saveBtn.TabIndex = 74;
@@ -448,6 +456,54 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // extract4LSBButton
+            // 
+            this.extract4LSBButton.AutoSize = true;
+            this.extract4LSBButton.Location = new System.Drawing.Point(263, 359);
+            this.extract4LSBButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.extract4LSBButton.Name = "extract4LSBButton";
+            this.extract4LSBButton.Size = new System.Drawing.Size(54, 17);
+            this.extract4LSBButton.TabIndex = 80;
+            this.extract4LSBButton.TabStop = true;
+            this.extract4LSBButton.Text = "4 LSB";
+            this.extract4LSBButton.UseVisualStyleBackColor = true;
+            // 
+            // extract3LSBButton
+            // 
+            this.extract3LSBButton.AutoSize = true;
+            this.extract3LSBButton.Location = new System.Drawing.Point(201, 359);
+            this.extract3LSBButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.extract3LSBButton.Name = "extract3LSBButton";
+            this.extract3LSBButton.Size = new System.Drawing.Size(54, 17);
+            this.extract3LSBButton.TabIndex = 79;
+            this.extract3LSBButton.TabStop = true;
+            this.extract3LSBButton.Text = "3 LSB";
+            this.extract3LSBButton.UseVisualStyleBackColor = true;
+            // 
+            // extract2LSBButton
+            // 
+            this.extract2LSBButton.AutoSize = true;
+            this.extract2LSBButton.Location = new System.Drawing.Point(139, 359);
+            this.extract2LSBButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.extract2LSBButton.Name = "extract2LSBButton";
+            this.extract2LSBButton.Size = new System.Drawing.Size(54, 17);
+            this.extract2LSBButton.TabIndex = 78;
+            this.extract2LSBButton.TabStop = true;
+            this.extract2LSBButton.Text = "2 LSB";
+            this.extract2LSBButton.UseVisualStyleBackColor = true;
+            // 
+            // extract1LSBButton
+            // 
+            this.extract1LSBButton.AutoSize = true;
+            this.extract1LSBButton.Location = new System.Drawing.Point(77, 359);
+            this.extract1LSBButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.extract1LSBButton.Name = "extract1LSBButton";
+            this.extract1LSBButton.Size = new System.Drawing.Size(54, 17);
+            this.extract1LSBButton.TabIndex = 77;
+            this.extract1LSBButton.TabStop = true;
+            this.extract1LSBButton.Text = "1 LSB";
+            this.extract1LSBButton.UseVisualStyleBackColor = true;
+            // 
             // ImageEmbedderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -511,5 +567,9 @@
         private System.Windows.Forms.RadioButton Lsb1Button;
         private System.Windows.Forms.TextBox saveLabel;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.RadioButton extract4LSBButton;
+        private System.Windows.Forms.RadioButton extract3LSBButton;
+        private System.Windows.Forms.RadioButton extract2LSBButton;
+        private System.Windows.Forms.RadioButton extract1LSBButton;
     }
 }
