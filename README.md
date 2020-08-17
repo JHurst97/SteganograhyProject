@@ -1,8 +1,8 @@
 <h1><b>Steganography program</b></h1>
 
 - [Introduction.](#intro)
-- [An activity.](#an activity:)
-- [Installation guide.](#installation guide:)
+- [An activity.](#an%20activity:)
+- [Installation guide.](#installation%20guide:)
 - [An activity.](#an activity:)
 - [An activity.](#an activity:)
 - [An activity.](#an activity:)
