@@ -3,7 +3,8 @@
 - [Introduction.](#intro)
 - [Activity.](#activity)
 - [Installation.](#installation)
-- [Introduction1.](#intro1)
+- [Speed.](#speed)
+- [Instructions.](#instructions)
 <!-- toc -->
 
 ## Intro
@@ -27,7 +28,6 @@
 <p>Alternatively...</p>
 <h4>Zip file:</h4>
 
-## Intro1
 <ol>
   <li>Click 'Code' in the top-right.</li>
   <li>select 'Download Zip'.</li>
@@ -39,7 +39,7 @@
 <h4>How do I extract my embedded text?</h4>
 <img src="assets/textExtractTutorial.jpg" width="500"></img>
 
-<h2>Speed test:</h2>
+## Speed
 <p>of course, the speeds will vary depending on your machine but here's how it runs on my PC.</h2>
 <p>(embedding 10,000 characters into a 400x400.jpg)</p>
 <table>
@@ -96,8 +96,8 @@
 </tbody>
 </table>
 
-<hr>
-<h2>Instructions:</h2>
+
+## Instructions
 <p>Instructions can also be found in the program on the about form.</p>
 <h4>Embedding</h4>
 <p><i>NOTE: Symetric encryption ONLY works for 1 and 4 LSB.</i></p>
