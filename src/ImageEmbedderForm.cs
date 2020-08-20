@@ -77,7 +77,7 @@ namespace ProductionProject
         private void extractBtn_Click(object sender, EventArgs e)
         {
             embedPanel.Visible = false;
-            this.Size = new Size(650, 450);
+            this.Size = new Size(649, 475);
             extractPanel.Visible = true;
             embedBtn.BackColor = Color.DimGray;
             extractBtn.BackColor = Color.White;

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Button decodeButton;
             this.embedPanel = new System.Windows.Forms.Panel();
+            this.warningLabel = new System.Windows.Forms.Label();
             this.Lsb4Button = new System.Windows.Forms.RadioButton();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.Lsb3Button = new System.Windows.Forms.RadioButton();
@@ -52,6 +53,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.extractBtn = new System.Windows.Forms.Button();
             this.extractPanel = new System.Windows.Forms.Panel();
+            this.extract4LSBButton = new System.Windows.Forms.RadioButton();
+            this.extract3LSBButton = new System.Windows.Forms.RadioButton();
+            this.extract2LSBButton = new System.Windows.Forms.RadioButton();
+            this.extract1LSBButton = new System.Windows.Forms.RadioButton();
             this.saveLabel = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.saveBtn = new System.Windows.Forms.Button();
@@ -63,11 +68,6 @@
             this.closeButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.extract4LSBButton = new System.Windows.Forms.RadioButton();
-            this.extract3LSBButton = new System.Windows.Forms.RadioButton();
-            this.extract2LSBButton = new System.Windows.Forms.RadioButton();
-            this.extract1LSBButton = new System.Windows.Forms.RadioButton();
-            this.warningLabel = new System.Windows.Forms.Label();
             decodeButton = new System.Windows.Forms.Button();
             this.embedPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -93,7 +93,6 @@
             // 
             // embedPanel
             // 
-            this.embedPanel.Controls.Add(this.warningLabel);
             this.embedPanel.Controls.Add(this.Lsb4Button);
             this.embedPanel.Controls.Add(this.textBox3);
             this.embedPanel.Controls.Add(this.Lsb3Button);
@@ -115,6 +114,18 @@
             this.embedPanel.Name = "embedPanel";
             this.embedPanel.Size = new System.Drawing.Size(738, 675);
             this.embedPanel.TabIndex = 1;
+            // 
+            // warningLabel
+            // 
+            this.warningLabel.AutoSize = true;
+            this.warningLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.warningLabel.ForeColor = System.Drawing.Color.Red;
+            this.warningLabel.Location = new System.Drawing.Point(159, 3);
+            this.warningLabel.Name = "warningLabel";
+            this.warningLabel.Size = new System.Drawing.Size(578, 17);
+            this.warningLabel.TabIndex = 73;
+            this.warningLabel.Text = "WARNING: 1LSB is  the only working option for image embedding. 2/3/4LSB coming so" +
+    "on. ";
             // 
             // Lsb4Button
             // 
@@ -309,6 +320,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.warningLabel);
             this.panel2.Controls.Add(this.extractBtn);
             this.panel2.Controls.Add(this.embedBtn);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -347,8 +359,56 @@
             this.extractPanel.Controls.Add(decodeButton);
             this.extractPanel.Location = new System.Drawing.Point(1, 52);
             this.extractPanel.Name = "extractPanel";
-            this.extractPanel.Size = new System.Drawing.Size(649, 418);
+            this.extractPanel.Size = new System.Drawing.Size(649, 419);
             this.extractPanel.TabIndex = 2;
+            // 
+            // extract4LSBButton
+            // 
+            this.extract4LSBButton.AutoSize = true;
+            this.extract4LSBButton.Location = new System.Drawing.Point(263, 359);
+            this.extract4LSBButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.extract4LSBButton.Name = "extract4LSBButton";
+            this.extract4LSBButton.Size = new System.Drawing.Size(54, 17);
+            this.extract4LSBButton.TabIndex = 80;
+            this.extract4LSBButton.TabStop = true;
+            this.extract4LSBButton.Text = "4 LSB";
+            this.extract4LSBButton.UseVisualStyleBackColor = true;
+            // 
+            // extract3LSBButton
+            // 
+            this.extract3LSBButton.AutoSize = true;
+            this.extract3LSBButton.Location = new System.Drawing.Point(201, 359);
+            this.extract3LSBButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.extract3LSBButton.Name = "extract3LSBButton";
+            this.extract3LSBButton.Size = new System.Drawing.Size(54, 17);
+            this.extract3LSBButton.TabIndex = 79;
+            this.extract3LSBButton.TabStop = true;
+            this.extract3LSBButton.Text = "3 LSB";
+            this.extract3LSBButton.UseVisualStyleBackColor = true;
+            // 
+            // extract2LSBButton
+            // 
+            this.extract2LSBButton.AutoSize = true;
+            this.extract2LSBButton.Location = new System.Drawing.Point(139, 359);
+            this.extract2LSBButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.extract2LSBButton.Name = "extract2LSBButton";
+            this.extract2LSBButton.Size = new System.Drawing.Size(54, 17);
+            this.extract2LSBButton.TabIndex = 78;
+            this.extract2LSBButton.TabStop = true;
+            this.extract2LSBButton.Text = "2 LSB";
+            this.extract2LSBButton.UseVisualStyleBackColor = true;
+            // 
+            // extract1LSBButton
+            // 
+            this.extract1LSBButton.AutoSize = true;
+            this.extract1LSBButton.Location = new System.Drawing.Point(77, 359);
+            this.extract1LSBButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.extract1LSBButton.Name = "extract1LSBButton";
+            this.extract1LSBButton.Size = new System.Drawing.Size(54, 17);
+            this.extract1LSBButton.TabIndex = 77;
+            this.extract1LSBButton.TabStop = true;
+            this.extract1LSBButton.Text = "1 LSB";
+            this.extract1LSBButton.UseVisualStyleBackColor = true;
             // 
             // saveLabel
             // 
@@ -458,66 +518,6 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // extract4LSBButton
-            // 
-            this.extract4LSBButton.AutoSize = true;
-            this.extract4LSBButton.Location = new System.Drawing.Point(263, 359);
-            this.extract4LSBButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.extract4LSBButton.Name = "extract4LSBButton";
-            this.extract4LSBButton.Size = new System.Drawing.Size(54, 17);
-            this.extract4LSBButton.TabIndex = 80;
-            this.extract4LSBButton.TabStop = true;
-            this.extract4LSBButton.Text = "4 LSB";
-            this.extract4LSBButton.UseVisualStyleBackColor = true;
-            // 
-            // extract3LSBButton
-            // 
-            this.extract3LSBButton.AutoSize = true;
-            this.extract3LSBButton.Location = new System.Drawing.Point(201, 359);
-            this.extract3LSBButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.extract3LSBButton.Name = "extract3LSBButton";
-            this.extract3LSBButton.Size = new System.Drawing.Size(54, 17);
-            this.extract3LSBButton.TabIndex = 79;
-            this.extract3LSBButton.TabStop = true;
-            this.extract3LSBButton.Text = "3 LSB";
-            this.extract3LSBButton.UseVisualStyleBackColor = true;
-            // 
-            // extract2LSBButton
-            // 
-            this.extract2LSBButton.AutoSize = true;
-            this.extract2LSBButton.Location = new System.Drawing.Point(139, 359);
-            this.extract2LSBButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.extract2LSBButton.Name = "extract2LSBButton";
-            this.extract2LSBButton.Size = new System.Drawing.Size(54, 17);
-            this.extract2LSBButton.TabIndex = 78;
-            this.extract2LSBButton.TabStop = true;
-            this.extract2LSBButton.Text = "2 LSB";
-            this.extract2LSBButton.UseVisualStyleBackColor = true;
-            // 
-            // extract1LSBButton
-            // 
-            this.extract1LSBButton.AutoSize = true;
-            this.extract1LSBButton.Location = new System.Drawing.Point(77, 359);
-            this.extract1LSBButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.extract1LSBButton.Name = "extract1LSBButton";
-            this.extract1LSBButton.Size = new System.Drawing.Size(54, 17);
-            this.extract1LSBButton.TabIndex = 77;
-            this.extract1LSBButton.TabStop = true;
-            this.extract1LSBButton.Text = "1 LSB";
-            this.extract1LSBButton.UseVisualStyleBackColor = true;
-            // 
-            // warningLabel
-            // 
-            this.warningLabel.AutoSize = true;
-            this.warningLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.warningLabel.ForeColor = System.Drawing.Color.Red;
-            this.warningLabel.Location = new System.Drawing.Point(75, 0);
-            this.warningLabel.Name = "warningLabel";
-            this.warningLabel.Size = new System.Drawing.Size(633, 17);
-            this.warningLabel.TabIndex = 73;
-            this.warningLabel.Text = "WARNING: 1LSB is currently the only working option for image embedding. 2/3/4LSB " +
-    "coming soon. ";
-            // 
             // ImageEmbedderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -537,6 +537,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.extractPanel.ResumeLayout(false);
             this.extractPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
