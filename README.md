@@ -1,19 +1,34 @@
 <h1><b>Steganography program</b></h1>
+
+<h3>Contents:</h3>
+
+- [Introduction.](#intro)
+- [Activity.](#activity)
+- [Installation.](#installation)
+- [Tutorial.](#tutorial)
+- [Speed.](#speed)
+- [Instructions.](#instructions)
+<!-- toc -->
+
+## Intro
+
 <p>Steganography is the practice of concealing a file, message, image, or video within another file, message, image, or video. The word steganography comes from Greek steganographia, which combines the words steganós, meaning "covered or concealed", and -graphia meaning "writing".</p>
 
 <ul>
 <li><p>This program takes a cover image and allows the user to store text OR an image inside of another image by manipulating the bits of each pixel.</p></li>
-<li><p>User can choose to modify 1/2/3/4 LSB (least significant bit(s)) during text embedding and extraction.<p> </li>
-<li><p>1LSB means less potential storage but less noise (1/255) - 4LSB means more 4x more potential storage than 1LSB but 4x the noise (16/255)<p></li>
+<li><p>User can choose to modify 1/2/3/4 LSB (least significant bit(s)) during text embedding and extraction.</p> </li>
+<li><p>1LSB means less potential storage but less noise (1/255) - 4LSB means more 4x more potential storage than 1LSB but 4x the noise (16/255)</p></li>
 <li><p>Image embed is currently set to 1/2/3 LSB - the extraction can only be performed on 1lsb. I'm working on this but it results in the following requirement: the input image must be 8x smaller than the cover image.</p></li>
 <li><p>I made a YouTube <a href="https://youtu.be/Bgl_wmb9dU0">demonstration</a> for this program but it is slightly outdated now, it's still the same concept though!</p></li>
 </ul>
 
-<h2>An activity:</h2>
+## Activity
+
 <img src="assets/test.jpg" width="500"></img>
 <p>Extract the text (1LSB) from this image and decrypt using symetric alongside this key: '23561287'. :)</p>
 
-<h2>Installation guide:</h2>
+## Installation
+
 <h4>Releases:</h4>
 <p>Click 'releases' on the right-hand side of this repo and you can download the .exe file, this may not be the latest version of the project.</p>
 <ul><li>Note: my own browser (Microsoft edge) flags this as a potential danger - I assure you it's not but feel free to scan it for yourself. I have reported this issue to Microsoft. :) </li></ul>
@@ -25,13 +40,16 @@
   <li>select 'Download Zip'.</li>
   <li>This method will require you to compile it using Visual studio.</li>
 </ol>
-<h2>Tutorial:</h2>
+
+## Tutorial
+
 <h4>How do I embed text?</h4>
 <img src="assets/textEmbedTutorial.jpg" width="500"></img>
 <h4>How do I extract my embedded text?</h4>
 <img src="assets/textExtractTutorial.jpg" width="500"></img>
 
-<h2>Speed test:</h2>
+## Speed
+
 <p>of course, the speeds will vary depending on your machine but here's how it runs on my PC.</h2>
 <p>(embedding 10,000 characters into a 400x400.jpg)</p>
 <table>
@@ -88,8 +106,9 @@
 </tbody>
 </table>
 
-<hr>
-<h2>Instructions:</h2>
+
+## Instructions
+
 <p>Instructions can also be found in the program on the about form.</p>
 <h4>Embedding</h4>
 <p><i>NOTE: Symetric encryption ONLY works for 1 and 4 LSB.</i></p>
