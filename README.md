@@ -24,8 +24,8 @@
 
 ## Activity
 
-<img src="assets/test.jpg" width="500"></img>
-<p>Extract the text (1LSB) from this image and decrypt using symetric alongside this key: '23561287'. :)</p>
+<img src="assets/BetYouCantDoIt.jpg" width="500"></img>
+<p>Extract the text (1LSB). :)</p>
 
 ## Installation
 
