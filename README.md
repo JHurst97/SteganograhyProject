@@ -48,6 +48,7 @@
 <h4>How do I extract my embedded text?</h4>
 <img src="assets/textExtractTutorial.jpg" width="500"></img>
 <p> if you managed it from these photos - you're probably quite good with computers!:)
+  
 ## Speed
 
 <p>of course, the speeds will vary depending on your machine but here's how it runs on my PC.</h2>
